@@ -10,6 +10,7 @@ export default class Main extends React.Component {
   state = {
     tab1: 0,
     tab2: "hot",
+    tabSwitch:[],
     contentList: [],
     offset: 0,
   };
@@ -59,11 +60,14 @@ export default class Main extends React.Component {
       console.log(this.state.contentList);
     });
   };
-  changeTab1 = async (i) => {
-    console.log("this is father", i);
+  changeTab1=async (i)=>{
+    console.log(i)
+    let temp_switch = new Array(this.state.tabSwitch.length).fill(0);
+    temp_switch[i]=1;
     await this.setState({
-      tab1: i,
-    });
+        tabSwitch:temp_switch,
+        tab1:i
+    })
     this.updateList();
   };
   changeTab2 = async (i) => {
@@ -123,7 +127,7 @@ export default class Main extends React.Component {
     return (
       <div className="mainPage">
         <Header></Header>
-        <Tabbar1 changeTab1={this.changeTab1}></Tabbar1>
+        <Tabbar1 changeTab1={this.changeTab1} tabSwitch={this.state.tabSwitch}></Tabbar1>
         <Section
           changeTab2={this.changeTab2}
           contentList={contentList}
