@@ -1,0 +1,150 @@
+page{
+    background-color: rgb(244, 246, 245);
+}
+.content {
+    box-sizing: border-box;
+  width: 375px;
+  height: 559px;
+  background-color: rgb(244, 246, 245);
+  overflow: scroll;
+}
+
+.authorBox{
+    width: 335px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.artImg{
+    width: 335px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.artTitle{
+    width: 335px;
+    height: 60px;
+    /* padding: 0; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Footer {
+  width: 375px;
+  height: 40px;
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 7px;
+  padding-right: 7px;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgba(162,162,162,0.6);
+}
+
+.FooterItem{
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+.FooterImg{
+    width: 30px;
+    height: 30px;
+}
+
+.FooterContent{
+    height: 30px;
+    width: 35px;
+    text-align: center;
+    color:rgb(162,162,162);
+    display: flex;
+    align-items: center;
+}
+
+#comment{
+    box-sizing: border-box;
+    width: 375px;
+    height: auto;
+    background-color:white;
+    border-top: 1px solid rgba(162,162,162,0.7);
+    padding:20px
+}
+
+.commentItem::first-line{
+    display: flex;
+    width: 335px;
+    height: 60px;
+}
+
+.commentItem{
+    box-sizing: border-box;
+    display: flex;
+    width: 335px;
+    height: auto;
+    border-top: 1px solid rgba(162,162,162,0.7);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.author {
+    color: rgb(75, 79, 80);
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+  }
+
+.createDate{
+    color: rgba(116, 116, 116, 0.8);
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+
+#comment img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.commentContent{
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgba(116, 116, 116, 100);
+}
+
+.operateBox{
+    margin-top: 10px;
+    display: flex;
+}
+
+.operate{
+    display: flex;
+    margin-right: 10px;
+}
+
+.operateImg{
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.operateText{
+    font-size: 11px;
+    color: rgba(116, 116, 116, 0.8);
+}
+
+.end{
+    position: relative;
+    top: -5px;
+    width:auto;
+    text-align:center;
+    background-color:white;
+    font-size:12px;
+    padding: 10px;
+    padding-top: 0px;
+    color:rgba(116, 116, 116, 0.8);
+}
